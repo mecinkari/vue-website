@@ -19,6 +19,7 @@
             >
               <div>
                 <img
+                  oncontextmenu="return false;"
                   :src="headerImg[0]"
                   class="w-full p-4 border rounded"
                   alt=""
@@ -30,6 +31,7 @@
               </div>
               <div>
                 <img
+                  oncontextmenu="return false;"
                   :src="headerImg[2]"
                   class="w-full p-4 border rounded"
                   alt=""
@@ -171,18 +173,26 @@
           </h1>
           <p class="text-xl">
             Want to get your character drawn by me? My commissions are open!
-            Please read my
-            <a
-              class="text-blue-600"
+            Please read my Terms Of Service before sending me a request with the
+            form below!
+            <!-- <a
+              class="text-blue-600 font-semibold"
               @click="openTos = true"
               href="javascript:void(0)"
               >Terms Of Service</a
-            >
-            before sending me a request with the form below!
+            > -->
           </p>
+          <button
+            @click="openTos = true"
+            type="button"
+            class="text-xl mt-3 bg-blue-500 active:bg-blue-700 hover:bg-blue-600 text-white px-4 py-2 rounded"
+          >
+            Terms Of Service
+          </button>
         </div>
         <div>
           <img
+            oncontextmenu="return false;"
             class="w-full shadow-2xl h-auto max-w-lg mx-auto bg-white p-6 border rounded transform rotate-1"
             src="../assets/2021-05-14_195046.png"
             alt=""
