@@ -57,14 +57,17 @@
               </li>
             </ul>
             <p class="text-red-800 bg-red-100">
-              I will not accept request which didn't included in
+              I will not accept requests, which are outside of the
               <span class="font-semibold">Allowed Content</span>
-              list.
+              rules.
             </p>
           </div>
           <div>
             <p class="text-lg font-semibold">Contact.</p>
-            <p>Please use this platform to have contact with me.</p>
+            <p>
+              Please use these platforms to contact me if you have any
+              questions.
+            </p>
             <ul class="list-disc list-outside">
               <li>
                 <p class="inline">
@@ -142,15 +145,15 @@
         <hr class="my-6 border-2" />
         <div class="max-w-2xl text-gray-600 block mx-auto">
           <p class="text-xl mb-6">
-            I'm an Indonesian college student who love to code and do art stuff.
-            Have been learning web development for 3 years and still going. Have
-            been internship in MNC Media for 3 months as web developer for team
-            sales.
+            I'm an Indonesian college student who loves to code and create 2D
+            art. I have been learning web development for 3 years ongoing and
+            did an internship at MNC Media for 3 months as a web developer for
+            team sales.
           </p>
           <p class="text-xl">
-            I'm also an illustrator who spent most of the times doing some arts
-            and commissions. Also because of my skills for code and art, I've
-            been doing some indie game projects and created some game assets.
+            I'm also an illustrator who spends most of his time doing art and
+            commissions. Because of my love for code and art, I've been doing
+            some indie game development and created some game assets.
           </p>
         </div>
       </div>
@@ -167,15 +170,15 @@
             I Also Offer Commissions!
           </h1>
           <p class="text-xl">
-            Wanna your character got draw by me? I do open commissions for you!
-            Please read
+            Want to get your character drawn by me? My commissions are open!
+            Please read my
             <a
               class="text-blue-600"
               @click="openTos = true"
               href="javascript:void(0)"
               >Terms Of Service</a
             >
-            before willing to have requests.
+            before sending me a request with the form below!
           </p>
         </div>
         <div>
@@ -190,7 +193,7 @@
     <div class="w-full p-6 flex items-center min-h-screen">
       <div class="w-full" data-aos="fade-in" data-aos-offset="300">
         <p class="text-2xl md:text-4xl mb-8 text-center font-bold">
-          Leave A Message
+          Request Form
         </p>
         <div class="max-w-2xl mx-auto">
           <div class="block py-2 px-4 mb-4 bg-green-100" v-if="successSubmit">
@@ -206,17 +209,19 @@
                 required
                 name="name"
                 class="w-full block mt-2 px-3 py-2 border-2 border focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
-                placeholder="John Doe"
+                placeholder="example: John Doe"
               />
             </div>
             <div class="mt-6">
-              <label for="" class="font-semibold">Your Email</label>
+              <label for="" class="font-semibold"
+                >Telegram or Discord username</label
+              >
               <input
                 type="email"
                 required
                 name="email"
                 class="w-full block mt-2 px-3 py-2 border-2 border focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
-                placeholder="johndoe@example.com"
+                placeholder="example: @johndoe or johndoe#1234"
               />
             </div>
             <div class="mt-6">
@@ -263,12 +268,12 @@ export default {
         "https://cdn.sanity.io/images/kk2d333s/production/327353a13b4e4d7574d65dfdf94f862b0b663659-2000x1500.png",
       ],
       paymentList: [
-        "All prices are displayed in USD.",
-        "Adding additional character(s) will be charged $3.00/character for Half body and +$5.00/character for Full body",
+        "All prices are in USD.",
+        "Adding additional character(s) will be +$3.00/character for Half body and +$5.00/character for Full body.",
         "Payment must be sent via PayPal.",
-        "Payment must be sent before, during or after sketch process. I will not go to the next step if the payment has not been done yet.",
-        "You will got full refund if the sketch process isn't at final.",
-        "The process could took a week if your order was not at the last and not too much complexity.",
+        "Payment must be sent before, during or after sketch process. I will not continue to the next step if the payment has not been done yet.",
+        "You will get a full refund if the sketch process isn't at final.",
+        "The process can take a week when you're not the last in queue and the complexity is normal.",
       ],
       allowedList: ["Furry", "Human/Anime", "Slight gore"],
     };
