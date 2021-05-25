@@ -288,7 +288,7 @@ export default {
         "Web Developer.",
         "Freelance Illustrator.",
         "Game Developer.",
-        "Ori The Game Fan.",
+        "fan of the Ori Games.",
       ],
       typeSpeed: 30,
       backDelay: 2000,
