@@ -1,5 +1,91 @@
 <template>
-  <div>
+  <div class="">
+    <div
+      @click="openTos = false"
+      v-if="openTos"
+      class="fixed overflow-y-auto z-50 top-0 px-6 left-0 w-full h-screen bg-black bg-opacity-75"
+    >
+      <div class="max-w-3xl p-12 bg-white mx-auto rounded">
+        <p class="text-3xl font-semibold text-center">Terms Of Service</p>
+        <p class="text-xl font-semibold text-center text-gray-600">
+          Mecinkari's Watercolor Commission
+        </p>
+        <hr class="my-4" />
+        <div class="divide-y-2 space-y-4 divide-gray-200 divide-solid">
+          <div>
+            <p class="text-lg font-semibold">Preview.</p>
+            <div
+              class="grid grid-cols-1 space-y-4 md:gap-2 md:space-y-0 md:grid-cols-2"
+            >
+              <div>
+                <img
+                  :src="headerImg[0]"
+                  class="w-full p-4 border rounded"
+                  alt=""
+                />
+                <p class="text-center font-semibold">Half Body Watercolor</p>
+                <p class="text-center font-semibold text-2xl">
+                  USD 10.00/<sub>art</sub>
+                </p>
+              </div>
+              <div>
+                <img
+                  :src="headerImg[2]"
+                  class="w-full p-4 border rounded"
+                  alt=""
+                />
+                <p class="text-center font-semibold">Full Body Watercolor</p>
+                <p class="text-center font-semibold text-2xl">
+                  USD 20.00/<sub>art</sub>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p class="text-lg font-semibold">Payment.</p>
+            <ul class="list-disc list-outside">
+              <li v-for="list in paymentList" :key="list">
+                <p class="inline">{{ list }}</p>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-lg font-semibold">Allowed content.</p>
+            <ul class="list-disc list-outside">
+              <li v-for="list in allowedList" :key="list">
+                <p class="inline">{{ list }}</p>
+              </li>
+            </ul>
+            <p class="text-red-800 bg-red-100">
+              I will not accept request which didn't included in
+              <span class="font-semibold">Allowed Content</span>
+              list.
+            </p>
+          </div>
+          <div>
+            <p class="text-lg font-semibold">Contact.</p>
+            <p>Please use this platform to have contact with me.</p>
+            <ul class="list-disc list-outside">
+              <li>
+                <p class="inline">
+                  Telegram:
+                  <code class="text-blue-800 bg-blue-100">@mecinkari</code>
+                </p>
+              </li>
+              <li>
+                <p class="inline">
+                  Discord:
+                  <code class="text-blue-800 bg-blue-100">mecinkari#8139</code>
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-center mt-6">Thank you for reading this! :D</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="home relative flex h-screen w-full bg-white">
       <div
         class="w-full md:w-1/2 flex flex-col justify-center items-center h-screen bg-white"
@@ -48,10 +134,11 @@
       <div
         data-aos="zoom-in"
         data-aos-offset="400"
-        data-aos-once="true"
         class="shadow-xl transition-all transform bg-white p-6 rounded-xl"
       >
-        <p class="text-5xl transition-all text-center font-bold">Who am I?</p>
+        <p class="text-3xl md:text-5xl transition-all text-center font-bold">
+          Who am I?
+        </p>
         <hr class="my-6 border-2" />
         <div class="max-w-2xl text-gray-600 block mx-auto">
           <p class="text-xl mb-6">
@@ -68,8 +155,40 @@
         </div>
       </div>
     </div>
+    <div
+      class="w-full bg-about flex justify-center items-center px-12 py-6 min-h-screen"
+    >
+      <div
+        data-aos="fade-up"
+        class="w-full grid grid-cols-1 items-center gap-6 md:grid-cols-2 w-full"
+      >
+        <div class="md:order-last" data-aos-offset="200">
+          <h1 class="text-3xl mb-6 font-bold text-center">
+            I Also Offer Commissions!
+          </h1>
+          <p class="text-xl">
+            Wanna your character got draw by me? I do open commissions for you!
+            Please read
+            <a
+              class="text-blue-600"
+              @click="openTos = true"
+              href="javascript:void(0)"
+              >Terms Of Service</a
+            >
+            before willing to have requests.
+          </p>
+        </div>
+        <div>
+          <img
+            class="w-full shadow-2xl h-auto max-w-lg mx-auto bg-white p-6 border rounded transform rotate-1"
+            src="../assets/2021-05-14_195046.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
     <div class="w-full p-6 flex items-center min-h-screen">
-      <div class="w-full">
+      <div class="w-full" data-aos="fade-in" data-aos-offset="300">
         <p class="text-2xl md:text-4xl mb-8 text-center font-bold">
           Leave A Message
         </p>
@@ -135,14 +254,28 @@ export default {
   data() {
     return {
       formSubmit: "Submit",
+      openTos: false,
       successSubmit: false,
+      headerImgSelection: 0,
       headerImg: [
         "https://cdn.sanity.io/images/kk2d333s/production/96ec7897de823776da5085fa0c8816d6c778ac8b-1600x1200.png",
         "https://cdn.sanity.io/images/kk2d333s/production/4519c7ae949114bfc2eeda0f502fac1327feac9f-1500x2000.png",
+        "https://cdn.sanity.io/images/kk2d333s/production/327353a13b4e4d7574d65dfdf94f862b0b663659-2000x1500.png",
       ],
+      paymentList: [
+        "All prices are displayed in USD.",
+        "Adding additional character(s) will be charged $3.00/character for Half body and +$5.00/character for Full body",
+        "Payment must be sent via PayPal.",
+        "Payment must be sent before, during or after sketch process. I will not go to the next step if the payment has not been done yet.",
+        "You will got full refund if the sketch process isn't at final.",
+        "The process could took a week if your order was not at the last and not too much complexity.",
+      ],
+      allowedList: ["Furry", "Human/Anime", "Slight gore"],
     };
   },
-  components: {},
+  created() {
+    this.headerImgSelection = Math.floor(Math.random() * this.headerImg.length);
+  },
   mounted() {
     document.title = "Mecinkari";
     new Typed(".typed", {
