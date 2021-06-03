@@ -21,7 +21,6 @@
         :key="link.id"
         :to="link.link"
         active-class="text-blue-600"
-        @click="navbar = false"
         class="font-semibold px-6 py-3 block md:inline-block hover:bg-gray-50"
         >{{ link.title }}</router-link
       >
