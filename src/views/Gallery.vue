@@ -32,14 +32,20 @@
     <div v-if="error" class="error">
       {{ error }}
     </div>
-    <div class="w-full md:px-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <div class="w-full md:px-24 my-gallery">
       <div v-for="post in posts" :key="post._id" class="p-2 w-full">
-        <card
+        <img
+          class="w-full border rounded-2xl"
+          @click="getClicked"
+          :src="post.image.asset.url"
+          :alt="post.title"
+        />
+        <!-- <card
           @click="getClicked"
           class="w-full h-full"
           :src="post.image.asset.url"
           :alt="post.title"
-        />
+        /> -->
       </div>
     </div>
   </div>
@@ -47,7 +53,7 @@
 
 <script>
 import client from "../client";
-import Card from "../components/Card.vue";
+// import Card from "../components/Card.vue";
 const query = `*[_type == "gallery"] | order(_createdAt desc) {
   _id,
   title,
@@ -61,7 +67,7 @@ const query = `*[_type == "gallery"] | order(_createdAt desc) {
 export default {
   name: "Gallery",
   components: {
-    Card,
+    // Card,
   },
   data() {
     return {
@@ -114,6 +120,36 @@ export default {
 
 .spinner {
   animation: spin 500ms linear infinite;
+}
+
+.my-gallery {
+  columns: 3;
+  column-gap: 0.25rem;
+
+  img {
+    break-inside: avoid;
+    filter: grayscale(1);
+    cursor: pointer;
+    transition: all ease 250ms;
+
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .my-gallery {
+    columns: 2;
+    column-gap: 0.25rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .my-gallery {
+    columns: 1;
+    column-gap: 0.25rem;
+  }
 }
 
 @keyframes spin {
