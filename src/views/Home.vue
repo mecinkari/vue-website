@@ -3,7 +3,17 @@
     <div
       @click="openTos = false"
       v-if="openTos"
-      class="fixed overflow-y-auto z-50 top-0 px-6 left-0 w-full h-screen bg-black bg-opacity-75"
+      class="
+        fixed
+        overflow-y-auto
+        z-50
+        top-0
+        px-6
+        left-0
+        w-full
+        h-screen
+        bg-black bg-opacity-75
+      "
     >
       <div class="max-w-3xl p-12 bg-white mx-auto rounded">
         <p class="text-3xl font-semibold text-center">Terms Of Service</p>
@@ -15,7 +25,13 @@
           <div>
             <p class="text-lg font-semibold">Preview.</p>
             <div
-              class="grid grid-cols-1 space-y-4 md:gap-2 md:space-y-0 md:grid-cols-2"
+              class="
+                grid grid-cols-1
+                space-y-4
+                md:gap-2
+                md:space-y-0
+                md:grid-cols-2
+              "
             >
               <div>
                 <img
@@ -93,7 +109,15 @@
     </div>
     <div class="home relative flex h-screen w-full bg-white">
       <div
-        class="w-full md:w-1/2 flex flex-col justify-center items-center h-screen bg-white"
+        class="
+          w-full
+          md:w-1/2
+          flex flex-col
+          justify-center
+          items-center
+          h-screen
+          bg-white
+        "
       >
         <div class="block px-12 w-full">
           <p class="text-lg font-semibold">Hi! I'm</p>
@@ -106,22 +130,77 @@
           <div class="mt-10 flex w-full justify-start">
             <a href="https://twitter.com/mecinkari" target="_blank"
               ><i
-                class="block transition duration-200 fa-2x p-4 rounded-xl hover:bg-gray-200 fab fa-twitter"
+                class="
+                  block
+                  transition
+                  duration-200
+                  fa-2x
+                  p-4
+                  rounded-xl
+                  hover:bg-gray-200
+                  fab
+                  fa-twitter
+                "
               ></i
             ></a>
             <a href="https://www.instagram.com/mecinkari/" target="_blank"
               ><i
-                class="block transition duration-200 fa-2x p-4 rounded-xl hover:bg-gray-200 fab fa-instagram"
+                class="
+                  block
+                  transition
+                  duration-200
+                  fa-2x
+                  p-4
+                  rounded-xl
+                  hover:bg-gray-200
+                  fab
+                  fa-instagram
+                "
+              ></i
+            ></a>
+            <a href="https://www.patreon.com/mecinkari" target="_blank"
+              ><i
+                class="
+                  block
+                  transition
+                  duration-200
+                  fa-2x
+                  p-4
+                  rounded-xl
+                  hover:bg-gray-200
+                  fab
+                  fa-patreon
+                "
               ></i
             ></a>
             <a href="https://github.com/mecinkari" target="_blank"
               ><i
-                class="block transition duration-200 fa-2x p-4 rounded-xl hover:bg-gray-200 fab fa-github"
+                class="
+                  block
+                  transition
+                  duration-200
+                  fa-2x
+                  p-4
+                  rounded-xl
+                  hover:bg-gray-200
+                  fab
+                  fa-github
+                "
               ></i
             ></a>
             <a href="https://mecinkari.itch.io/" target="_blank"
               ><i
-                class="block transition duration-200 fa-2x p-4 rounded-xl hover:bg-gray-200 fab fa-itch-io"
+                class="
+                  block
+                  transition
+                  duration-200
+                  fa-2x
+                  p-4
+                  rounded-xl
+                  hover:bg-gray-200
+                  fab
+                  fa-itch-io
+                "
               ></i
             ></a>
           </div>
@@ -130,11 +209,29 @@
       <div
         oncontextmenu="return false;"
         :style="`--background: url(${headerImg[0]})`"
-        class="hidden relative bg-cover bg-center my-bg-image overflow-hidden md:block h-screen md:w-1/2"
+        class="
+          hidden
+          relative
+          bg-cover bg-center
+          my-bg-image
+          overflow-hidden
+          md:block
+          h-screen
+          md:w-1/2
+        "
       ></div>
     </div>
     <div
-      class="w-full bg-about bg-cover bg-center p-6 flex relative justify-center items-center min-h-screen"
+      class="
+        w-full
+        bg-about bg-cover bg-center
+        p-6
+        flex
+        relative
+        justify-center
+        items-center
+        min-h-screen
+      "
     >
       <div
         data-aos="zoom-in"
@@ -161,7 +258,16 @@
       </div>
     </div>
     <div
-      class="w-full bg-about flex justify-center items-center px-12 py-6 min-h-screen"
+      class="
+        w-full
+        bg-about
+        flex
+        justify-center
+        items-center
+        px-12
+        py-6
+        min-h-screen
+      "
     >
       <div
         data-aos="fade-up"
@@ -185,7 +291,17 @@
           <button
             @click="openTos = true"
             type="button"
-            class="text-xl mt-3 bg-blue-500 active:bg-blue-700 hover:bg-blue-600 text-white px-4 py-2 rounded"
+            class="
+              text-xl
+              mt-3
+              bg-blue-500
+              active:bg-blue-700
+              hover:bg-blue-600
+              text-white
+              px-4
+              py-2
+              rounded
+            "
           >
             Terms Of Service
           </button>
@@ -193,7 +309,19 @@
         <div>
           <img
             oncontextmenu="return false;"
-            class="w-full shadow-2xl h-auto max-w-lg mx-auto bg-white p-6 border rounded transform rotate-1"
+            class="
+              w-full
+              shadow-2xl
+              h-auto
+              max-w-lg
+              mx-auto
+              bg-white
+              p-6
+              border
+              rounded
+              transform
+              rotate-1
+            "
             src="../assets/2021-05-14_195046.png"
             alt=""
           />
@@ -218,7 +346,17 @@
                 type="text"
                 required
                 name="name"
-                class="w-full block mt-2 px-3 py-2 border-2 border focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                class="
+                  w-full
+                  block
+                  mt-2
+                  px-3
+                  py-2
+                  border-2 border
+                  focus:outline-none
+                  focus:ring-2 focus:ring-blue-600
+                  focus:border-transparent
+                "
                 placeholder="example: John Doe"
               />
             </div>
@@ -230,7 +368,17 @@
                 type="email"
                 required
                 name="email"
-                class="w-full block mt-2 px-3 py-2 border-2 border focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                class="
+                  w-full
+                  block
+                  mt-2
+                  px-3
+                  py-2
+                  border-2 border
+                  focus:outline-none
+                  focus:ring-2 focus:ring-blue-600
+                  focus:border-transparent
+                "
                 placeholder="example: @johndoe or johndoe#1234"
               />
             </div>
@@ -239,7 +387,17 @@
               <textarea
                 required
                 name="message"
-                class="w-full block mt-2 px-3 py-2 border-2 border focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                class="
+                  w-full
+                  block
+                  mt-2
+                  px-3
+                  py-2
+                  border-2 border
+                  focus:outline-none
+                  focus:ring-2 focus:ring-blue-600
+                  focus:border-transparent
+                "
                 id=""
                 cols="30"
                 rows="5"
