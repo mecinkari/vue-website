@@ -236,13 +236,21 @@
       <div
         data-aos="zoom-in"
         data-aos-offset="400"
-        class="shadow-xl transition-all transform bg-white p-6 rounded-xl"
+        class="
+          shadow-xl
+          transition-all
+          transform
+          -rotate-6
+          bg-white
+          p-6
+          border-2
+        "
       >
         <p class="text-3xl md:text-5xl transition-all text-center font-bold">
           Who am I?
         </p>
-        <hr class="my-6 border-2" />
-        <div class="max-w-2xl text-gray-600 block mx-auto">
+        <hr class="my-6 border-1" />
+        <div class="max-w-2xl text-center text-gray-600 block mx-auto">
           <p class="text-xl mb-6">
             I'm an Indonesian college student who loves to code and create 2D
             art. I have been learning web development for 3 years ongoing and
@@ -277,7 +285,7 @@
           <h1 class="text-3xl mb-6 font-bold text-center">
             I Also Offer Commissions!
           </h1>
-          <p class="text-xl">
+          <p class="text-xl text-center">
             Want to get your character drawn by me? My commissions are open!
             Please read my Terms Of Service before sending me a request with the
             form below!
@@ -293,11 +301,14 @@
             type="button"
             class="
               text-xl
-              mt-3
+              mt-5
               bg-blue-500
               active:bg-blue-700
               hover:bg-blue-600
               text-white
+              mx-auto
+              text-center
+              block
               px-4
               py-2
               rounded
