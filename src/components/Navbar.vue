@@ -29,7 +29,7 @@
         :key="link.id"
         :to="link.link"
         active-class="text-blue-600"
-        class="font-semibold px-6 py-3 block md:inline-block hover:bg-gray-50"
+        class="font-semibold px-4 py-3 block md:inline-block hover:bg-gray-50"
         >{{ link.title }}</router-link
       >
       <!-- <router-link
