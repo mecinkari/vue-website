@@ -23,7 +23,7 @@
           MSG Server
         </h1>
         <p class="text-lg font-normal">
-          My and my friends are made our own Discord server for gather people
+          Me and my friends are made our own Discord server for gather people
           and make good comunity, and get rid all the drama.
         </p>
         <hr class="my-6" />

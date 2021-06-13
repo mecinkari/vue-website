@@ -14,14 +14,29 @@
         </div>
       </div>
     </div>
-    <div class="w-full grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:px-24">
+    <div
+      class="
+        w-full
+        space-x-0
+        md:space-x-4
+        space-y-10
+        md:space-y-0
+        grid
+        lg:grid-cols-3
+        md:grid-cols-2
+        grid-cols-1
+        lg:px-24
+      "
+    >
       <router-link
         :to="`/blog/${post.slug.current}`"
         v-for="post in posts"
         :key="post._id"
       >
         <card :src="post.image.asset.url" :alt="post.image.asset.url" />
-        <p class="text-2xl font-semibold text-blue-600">{{ post.title }}</p>
+        <p class="text-2xl mt-2 font-semibold">
+          {{ post.title }}
+        </p>
       </router-link>
     </div>
   </div>
