@@ -9,10 +9,22 @@
           class="mx-auto mb-6 w-36 rounded-full shadow-lg"
           alt="logo"
         />
-        <h1 class="text-5xl mb-4">MSG Server</h1>
+        <h1
+          class="
+            text-5xl
+            mb-4
+            font-bold
+            text-transparent
+            bg-clip-text bg-gradient-to-r
+            from-red-400
+            to-blue-500
+          "
+        >
+          MSG Server
+        </h1>
         <p class="text-lg font-normal">
           My and my friends are made our own Discord server for gather people
-          and make good comunity.
+          and make good comunity, and get rid all the drama.
         </p>
         <hr class="my-6" />
         <div
@@ -37,7 +49,9 @@
               class="w-36 mx-auto rounded-full mb-4"
               :alt="card.username"
             />
-            <p class="text-blue-500 font-bold text-xl">{{ card.username }}</p>
+            <p class="text-blue-500 font-bold text-xl">
+              <a :href="card.link">{{ card.username }}</a>
+            </p>
             <p class="font-normal">{{ card.desc }}</p>
           </div>
         </div>
@@ -71,18 +85,21 @@ export default {
           profile:
             "https://pbs.twimg.com/profile_images/1403845865039568897/JVmdGjuZ_400x400.jpg",
           desc: "Server Owner",
+          link: "https://twitter.com/mecinkari",
         },
         {
           username: "@birdypilot",
           profile:
             "https://pbs.twimg.com/profile_images/1290831029008134145/5_8LWkBN_400x400.png",
           desc: "Server Moderation",
+          link: "https://twitter.com/birdypilot",
         },
         {
-          username: "@howl",
+          username: "@simplehowl1",
           profile:
             "https://pbs.twimg.com/profile_images/1394024587558543360/w_XL8K7S_400x400.jpg",
           desc: "Server Moderation",
+          link: "https://twitter.com/simplehowl1",
         },
       ],
     };
