@@ -1,6 +1,14 @@
 <template>
   <nav
-    class="z-50 top-0 w-full md:flex md:justify-between md:items-center bg-white"
+    class="
+      z-50
+      top-0
+      w-full
+      md:flex
+      md:justify-between
+      md:items-center
+      bg-white
+    "
   >
     <router-link class="inline-block px-6 py-3 font-semibold" to="/"
       >Mecinkari</router-link
@@ -63,6 +71,11 @@ export default {
           id: 3,
           link: "/gallery",
           title: "Artworks",
+        },
+        {
+          id: 4,
+          link: "/discord-server",
+          title: "Discord Server",
         },
       ],
     };

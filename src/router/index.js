@@ -21,6 +21,11 @@ const routes = [
     path: '/blog/:slug',
     name: 'Singlepost',
     component: () => import('../views/Singlepost.vue')
+  },
+  {
+    path: '/discord-server',
+    name: 'DiscordServer',
+    component: () => import('../views/DiscordServer.vue')
   }
 ]
 
