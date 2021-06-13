@@ -442,6 +442,7 @@ export default {
       successSubmit: false,
       headerImgSelection: 0,
       headerImg: [
+        "https://media.discordapp.net/attachments/639160533076934686/853371267700621332/2021-6-12-0530.png?width=630&height=473",
         "https://cdn.sanity.io/images/kk2d333s/production/96ec7897de823776da5085fa0c8816d6c778ac8b-1600x1200.png",
         "https://cdn.sanity.io/images/kk2d333s/production/4519c7ae949114bfc2eeda0f502fac1327feac9f-1500x2000.png",
         "https://cdn.sanity.io/images/kk2d333s/production/327353a13b4e4d7574d65dfdf94f862b0b663659-2000x1500.png",
