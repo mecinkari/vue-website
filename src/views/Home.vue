@@ -48,7 +48,7 @@
               <div>
                 <img
                   oncontextmenu="return false;"
-                  :src="headerImg[2]"
+                  :src="headerImg[3]"
                   class="w-full p-4 border rounded"
                   alt=""
                 />
