@@ -72,11 +72,6 @@ export default {
           link: "/gallery",
           title: "Artworks",
         },
-        {
-          id: 4,
-          link: "/discord-server",
-          title: "Discord Server",
-        },
       ],
     };
   },

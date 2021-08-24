@@ -158,7 +158,7 @@
                 "
               ></i
             ></a>
-            <a href="https://www.patreon.com/mecinkari" target="_blank"
+            <!-- <a href="https://www.patreon.com/mecinkari" target="_blank"
               ><i
                 class="
                   block
@@ -172,7 +172,7 @@
                   fa-patreon
                 "
               ></i
-            ></a>
+            ></a> -->
             <a href="https://github.com/mecinkari" target="_blank"
               ><i
                 class="
@@ -251,17 +251,21 @@
         </p>
         <hr class="my-6 border-1" />
         <div class="max-w-2xl text-center text-gray-600 block mx-auto">
-          <p class="text-xl mb-6">
+          <!-- <p class="text-xl mb-6">
             I'm an Indonesian college student who loves to code and create 2D
             art. I have been learning web development for 3 years ongoing and
             did an internship at MNC Media for 3 months as a web developer for
             team sales.
-          </p>
+          </p> -->
           <p class="text-xl">
-            I'm also an illustrator who spends most of his time doing art and
+            A guy who like to codes and draw whatever he want.
+          </p>
+          <!-- <p class="text-xl">
+            I'm an Indonesian college student who loves to code and create 2D
+            art. I'm an illustrator who spends most of the time doing art and
             commissions. Because of my love for code and art, I've been doing
             some indie game development and created some game assets.
-          </p>
+          </p> -->
         </div>
       </div>
     </div>

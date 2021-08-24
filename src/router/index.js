@@ -22,11 +22,6 @@ const routes = [
     name: 'Singlepost',
     component: () => import('../views/Singlepost.vue')
   },
-  {
-    path: '/discord-server',
-    name: 'DiscordServer',
-    component: () => import('../views/DiscordServer.vue')
-  }
 ]
 
 const router = createRouter({
